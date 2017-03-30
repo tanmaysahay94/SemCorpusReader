@@ -1,5 +1,6 @@
 SemCorpusReader
 =====
+A library that reads SemCor corpus data and provides various data points and attributes related to them programatically.
 
 Install
 =====

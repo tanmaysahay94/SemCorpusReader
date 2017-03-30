@@ -1,4 +1,6 @@
-#!/bin/env python
+#!/usr/bin/env python
+
+"""customSemCorCorpusReader.py: Contains the class CustomSemCorCorpusReader which enables reading and using SemCor corpus"""
 
 import os
 import itertools
@@ -99,3 +101,7 @@ class CustomSemCorCorpusReader(object):
             self._sents = [' '.join(tup[1][0] for tup in annotated_sentence) \
                             for annotated_sentence in self.annotated_chunks()]
         return self._sents
+
+
+__author__  = "Tanmay Sahay"
+__license__ = "MIT"   

@@ -59,7 +59,7 @@ class SemCorpusReader(object):
 
     def raw(self):
         if self._raw is None:
-            self._raw = open(self.pathToFile).read()
+            self._raw = open(self.pathToFile()).read()
         return self._raw
 
     def annotated_chunks(self):

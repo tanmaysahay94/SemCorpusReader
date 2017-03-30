@@ -1,12 +1,12 @@
 #!/usr/bin/env python
 
-"""customSemCorCorpusReader.py: Contains the class CustomSemCorCorpusReader which enables reading and using SemCor corpus"""
+"""SemCorpusReader.py: Contains the class SemCorpusReader which enables reading and using SemCor corpus"""
 
 import os
 import itertools
 from lxml import html
 
-class CustomSemCorCorpusReader(object):
+class SemCorpusReader(object):
 
     def __init__(self, pathToSemCorCorpus, fileName='br-a02'):
         self._pathToSemCorCorpus    = None

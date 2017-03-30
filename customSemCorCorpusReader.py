@@ -47,12 +47,12 @@ class CustomSemCorCorpusReader(object):
     def fileids(self):
         if self._fileids is None:
             self._fileids = [os.path.relpath(path, self.pathToSemCorCorpus()) \
-                            for path in \
-                            reduce(lambda l1, l2: l1 + l2, [[os.path.join(tup[0], fileid) \
-                            for fileid in tup[1]] \
-                            for tup in [(root, files) \
-                            for root, dirs, files in os.walk(self.pathToSemCorCorpus()) \
-                            if root.endswith('tagfiles')]])]
+                                for path in \
+                                reduce(lambda l1, l2: l1 + l2, [[os.path.join(tup[0], fileid) \
+                                for fileid in tup[1]] \
+                                for tup in [(root, files) \
+                                for root, dirs, files in os.walk(self.pathToSemCorCorpus()) \
+                                if root.endswith('tagfiles')]])]
         return self._fileids
 
     def raw(self):
